@@ -33,7 +33,6 @@ class MysqlAdapter implements DbInterface
 		$props   = $reflect->getProperties(ReflectionProperty::IS_PUBLIC | ReflectionProperty::IS_PROTECTED);
 		
 		foreach ($props as $prop) {
-//			die($prop->getName());
 		    $name = substr($prop->getName(),1);
 		   if(!in_array($name,array("config","link","result"))) { 
 			    $names[] = $name;
