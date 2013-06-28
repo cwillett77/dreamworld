@@ -61,7 +61,7 @@ $rows = $user->fetchAll();
 		<?php if(isset($errors)) echo $errors; ?>
 		<?php if(isset($_POST['sent'])): ?><h2>Your info has been submitted</h2><?php endif; ?>
 		<form id="contact_form" method="post" action=".">
-			<p><label>Name:<br />
+			<p><label>First Name:<br />
 			<input type="text" name="firstname" class="textfield" value="<?php if(isset($firstname)) echo htmlentities($firstname); ?>" />
 			</label><br /><span class="errors"><?php if(isset($firstnameErr)) echo $firstnameErr; ?></span></p>
 			
